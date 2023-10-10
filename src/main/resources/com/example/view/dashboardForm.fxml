@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="642.0" prefWidth="1002.0" style="-fx-background-color: #C5D9ED;" stylesheets="@cssFile/LoginPage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="643.0" prefWidth="234.0" style="-fx-background-color: #3E6A7F;">
+         <children>
+            <JFXButton layoutX="3.0" layoutY="103.0" onMouseClicked="#dashboardOnAction" prefHeight="45.0" prefWidth="218.0" ripplerFill="WHITE" style="-fx-background-color: #C6CCCD;" text="Dashboard" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="172.0" onMouseClicked="#manageEmployeeOnAction" prefHeight="45.0" prefWidth="218.0" ripplerFill="WHITE" style="-fx-background-color: #C6CCCD;" styleClass="dashboardButton" stylesheets="@cssFile/NewStyle.css" text="Manage Employee" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="239.0" onMouseClicked="#manageBusONAction" prefHeight="45.0" prefWidth="218.0" ripplerFill="WHITE" style="-fx-background-color: #C6CCCD;" styleClass="dashboardButton" stylesheets="@cssFile/NewStyle.css" text="Manage Buses" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="308.0" onMouseClicked="#manageStocksOnAction" prefHeight="45.0" prefWidth="218.0" ripplerFill="WHITE" style="-fx-background-color: #C6CCCD;" styleClass="dashboardButton" stylesheets="@cssFile/NewStyle.css" text="Card Recharge" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="375.0" onMouseClicked="#manageProfitOnAction" prefHeight="45.0" prefWidth="218.0" ripplerFill="WHITE" style="-fx-background-color: #C6CCCD;" styleClass="dashboardButton" stylesheets="@cssFile/NewStyle.css" text="Manage Profit" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="442.0" onMouseClicked="#monitorDriverOnAction" prefHeight="45.0" prefWidth="218.0" ripplerFill="WHITE" style="-fx-background-color: #C6CCCD;" styleClass="dashboardButton" stylesheets="@cssFile/NewStyle.css" text="Monitor Driver" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="511.0" onMouseClicked="#busHealthInfoOnAction" prefHeight="45.0" prefWidth="218.0" ripplerFill="BLACK" style="-fx-background-color: #C6CCCD;" styleClass="dashboardButton" stylesheets="@cssFile/NewStyle.css" text="Bus Health Info" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="75.0" layoutY="583.0" onMouseClicked="#logoutOnAction" prefHeight="30.0" prefWidth="71.0" style="-fx-background-radius: 5;" styleClass="logout" stylesheets="@cssFile/LoginPage.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="15.0" fitWidth="20.0" layoutX="16.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/Icons/dashboard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="2.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/Icons/businessman.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="13.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/Icons/front-of-bus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="90.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/Icons/profile-user.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="81.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ownername">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/Icons/stock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="16.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/Icons/profit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="15.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/Icons/driver.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="13.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/Icons/repairing-service.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changePane" layoutX="227.0" layoutY="-1.0" prefHeight="643.0" prefWidth="818.0" style="-fx-background-color: #B3B6B7;" stylesheets="@cssFile/LoginPage.css">
+         <children>
+            <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assests/home.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="39.0" layoutY="14.0" prefHeight="20.0" prefWidth="99.0" text="/ Dashboard">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

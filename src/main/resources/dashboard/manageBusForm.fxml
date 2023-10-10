@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="641.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.dashboard.ManageBusFormController">
+   <children>
+      <AnchorPane prefHeight="122.0" prefWidth="810.0" style="-fx-background-color: #B3B6B7;">
+         <children>
+            <Label layoutX="14.0" layoutY="28.0" prefHeight="23.0" prefWidth="128.0" text="Manage Buses" textFill="#344767">
+               <font>
+                  <Font name="Roboto Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="428.0" layoutY="77.0" onMouseClicked="#addbusOnAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #344767; -fx-border-radius: 10;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="517.0" layoutY="77.0" onMouseClicked="#deletebusOnAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #344767; -fx-border-radius: 10;" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="605.0" layoutY="77.0" onMouseClicked="#viewbusOnAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #344767; -fx-border-radius: 10;" text="VIEW" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="695.0" layoutY="77.0" onMouseClicked="#updatebusOnAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #344767; -fx-border-radius: 10;" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="manageBusChangePane" layoutY="121.0" prefHeight="521.0" prefWidth="810.0" style="-fx-background-color: #B3B6B7;">
+         <children>
+            <AnchorPane layoutX="28.0" layoutY="27.0" opacity="0.75" prefHeight="472.0" prefWidth="753.0" style="-fx-background-color: white; -fx-background-radius: 14;">
+               <children>
+                  <TableView layoutX="27.0" layoutY="49.0" prefHeight="394.0" prefWidth="627.0">
+                    <columns>
+                      <TableColumn prefWidth="103.77133560180664" text="Bus No" />
+                      <TableColumn minWidth="0.0" prefWidth="234.35987854003906" text="Permit Number" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="15.0" layoutY="9.0" prefHeight="17.0" prefWidth="76.0" text="Bus List">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="8.0" prefHeight="22.0" prefWidth="166.0" text="/ Manage Buses ">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

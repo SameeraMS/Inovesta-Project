@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="641.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.dashboard.cardRechargeFormController">
+   <children>
+      <AnchorPane fx:id="cardRechargePane" prefHeight="643.0" prefWidth="810.0" style="-fx-background-color: #B3B6B7;">
+         <children>
+            <Label layoutX="14.0" layoutY="28.0" prefHeight="23.0" prefWidth="128.0" text="Card Recharge" textFill="#344767">
+               <font>
+                  <Font name="Roboto Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt2" layoutX="66.0" layoutY="235.0" prefHeight="42.0" prefWidth="299.0" promptText="Enter Card Number">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txt3" layoutX="66.0" layoutY="321.0" prefHeight="42.0" prefWidth="299.0" promptText="Enter Amount" />
+            <TextField fx:id="txt4" layoutX="66.0" layoutY="414.0" prefHeight="42.0" prefWidth="299.0" promptText="Enter Security Code" />
+            <JFXButton buttonType="RAISED" layoutX="157.0" layoutY="495.0" onAction="#BtlRechargeONAction" prefHeight="30.0" prefWidth="117.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Recharge">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea editable="false" layoutX="420.0" layoutY="195.0" opacity="0.5" prefHeight="163.0" prefWidth="306.0" style="-fx-background-color: white;" />
+            <TextField fx:id="txt1" layoutX="66.0" layoutY="146.0" prefHeight="42.0" prefWidth="299.0" promptText="Enter the owner's name" />
+            <Label fx:id="lbl1" layoutX="551.0" layoutY="209.0" prefHeight="28.0" prefWidth="166.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="lbl2" layoutX="551.0" layoutY="258.0" prefHeight="30.0" prefWidth="166.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="lbl3" layoutX="550.0" layoutY="306.0" prefHeight="30.0" prefWidth="166.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="441.0" layoutY="214.0" text="Owner's Name : ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="442.0" layoutY="266.0" text="Card Number : ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="446.0" layoutY="314.0" text="Amount : ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <JFXButton layoutX="610.0" layoutY="70.0" onMouseClicked="#CardRecharge" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Create New Card" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </AnchorPane>
+      <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="8.0" prefHeight="22.0" prefWidth="166.0" text="/ Card Recharge">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

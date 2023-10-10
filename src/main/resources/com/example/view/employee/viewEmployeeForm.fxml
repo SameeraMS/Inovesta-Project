@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.employee.ViewEmployeeFormController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="643.0" prefWidth="810.0" style="-fx-background-color: #B3B6B7;">
+         <children>
+            <JFXButton layoutX="543.0" layoutY="363.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #344767; -fx-border-radius: 10;" text="VIEW" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXComboBox fx:id="comboBox" editable="true" layoutX="147.0" layoutY="73.0" prefHeight="30.0" prefWidth="139.0" promptText=" Select Type" visibleRowCount="3" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

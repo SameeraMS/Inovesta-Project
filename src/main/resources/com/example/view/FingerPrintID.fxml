@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="139.0" prefWidth="187.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.FingerPrintIDController">
+   <children>
+      <ImageView fitHeight="154.0" fitWidth="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assests/Icons/fingerprint.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

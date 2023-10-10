@@ -1,0 +1,17 @@
+.LoginPagebackgroundColor{
+    -fx-background-color: linear-gradient(to right,#F2E3E3, #B4C5EE);
+}
+.DashboardPagebackgroundColor{
+    -fx-background-color: linear-gradient(to left, #B4C5EE,#F2E3E3 );
+}
+.logout{
+    -fx-background-color: linear-gradient(to left,#5DADE2, #5DADE2);
+}
+.dashboardButton:hover{
+    -fx-background-color: linear-gradient(to bottom,#FFFFFF);
+}
+.formsColors:hover{
+    -fx-background-color: linear-gradient(to bottom,#B3B6B7 , #B3B6B7 );
+}
+
+

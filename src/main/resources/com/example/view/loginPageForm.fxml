@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginPanel" prefHeight="617.0" prefWidth="958.0" styleClass="LoginPagebackgroundColor" stylesheets="@cssFile/LoginPage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.LoginPageFormController">
+   <children>
+      <ImageView fitHeight="55.0" fitWidth="56.0" layoutX="238.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assests/Icons/fingerprint.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="103.0" layoutY="192.0" prefHeight="39.0" prefWidth="266.0" promptText="username" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ImageView fitHeight="47.0" fitWidth="55.0" layoutX="145.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assests/faceid.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="71.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assests/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="74.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assests/lock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="522.0" fitWidth="410.0" layoutX="493.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assests/loginimage-removebg-preview.png" />
+         </image>
+         <effect>
+            <Blend />
+         </effect>
+      </ImageView>
+      <Text layoutX="168.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" wrappingWidth="134.47174072265625">
+         <font>
+            <Font name="Calibri Bold" size="35.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="password" layoutX="103.0" layoutY="295.0" prefHeight="39.0" prefWidth="265.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <Text layoutX="175.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login with Others">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Line endX="-45.199981689453125" layoutX="394.0" layoutY="433.0" startX="-100.0" stroke="#918a8a" />
+      <Line endX="-27.199981689453125" layoutX="189.0" layoutY="434.0" startX="-81.5999984741211" stroke="#918a8a" />
+      <Text layoutX="154.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Face ID" wrappingWidth="39.3851318359375">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="loginBtn" layoutX="188.0" layoutY="364.0" onAction="#logintBtnOnAction" onKeyPressed="#loginOnActionEnter" onMouseClicked="#loginOnAction" prefHeight="26.0" prefWidth="78.0" styleClass="logout" text="Login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="141.0" layoutY="466.0" onAction="#FaceidOnAction" prefHeight="55.0" prefWidth="55.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="fingerPrintbtn" layoutX="239.0" layoutY="466.0" onAction="#FingerPrintOnAction" prefHeight="55.0" prefWidth="55.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="243.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FingerPrint" wrappingWidth="47.00000000000006">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

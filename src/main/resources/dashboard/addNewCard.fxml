@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="377.0" prefWidth="321.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.stock.AddNewCard">
+   <children>
+      <TextField fx:id="txtName" layoutX="38.0" layoutY="118.0" prefHeight="36.0" prefWidth="247.0" promptText="Enter name" />
+      <TextField fx:id="txtMobile" layoutX="38.0" layoutY="192.0" prefHeight="36.0" prefWidth="247.0" promptText="Enter Mobile Number" />
+      <TextField fx:id="txtAmount" layoutX="38.0" layoutY="48.0" prefHeight="36.0" prefWidth="247.0" />
+      <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="270.0" onAction="#btnCreateOnAction" prefHeight="30.0" prefWidth="117.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Create">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

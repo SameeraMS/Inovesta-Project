@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="643.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.dashboard.ManageProfitFormController">
+   <children>
+      <AnchorPane layoutY="1.0" prefHeight="643.0" prefWidth="810.0" style="-fx-background-color: #B3B6B7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="28.0" prefHeight="23.0" prefWidth="128.0" text="Manage Profit" textFill="#344767">
+               <font>
+                  <Font name="Roboto Bold" size="13.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="33.0" layoutY="75.0" opacity="0.84" prefHeight="158.0" prefWidth="230.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="10.0" layoutY="8.0" prefHeight="20.0" prefWidth="92.0" text="Total Trip">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="48.0" prefHeight="55.0" prefWidth="105.0" text="0">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="102.0" opacity="0.71" prefHeight="17.0" prefWidth="97.0" text="Since Last Week" textFill="#000000cb" />
+                  <Label layoutX="134.0" layoutY="67.0" prefHeight="17.0" prefWidth="54.0" text="+212" textFill="#11ff00" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="292.0" layoutY="74.0" opacity="0.84" prefHeight="158.0" prefWidth="230.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="15.0" layoutY="11.0" prefHeight="20.0" prefWidth="117.0" text="Total Income">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="49.0" prefHeight="55.0" prefWidth="167.0" text="Rs 135K">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="103.0" opacity="0.71" prefHeight="17.0" prefWidth="97.0" text="Since Last Week" textFill="#000000cb" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="551.0" layoutY="73.0" opacity="0.84" prefHeight="158.0" prefWidth="230.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="11.0" layoutY="8.0" prefHeight="20.0" prefWidth="117.0" text="Average Ticket">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="45.0" prefHeight="55.0" prefWidth="136.0" text="Rs200">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="99.0" opacity="0.71" prefHeight="17.0" prefWidth="97.0" text="Since Last Week" textFill="#000000cb" />
+                  <Label layoutX="157.0" layoutY="64.0" prefHeight="17.0" prefWidth="54.0" text="-Rs80" textFill="RED" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="553.0" layoutY="249.0" opacity="0.84" prefHeight="366.0" prefWidth="230.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="17.0" layoutY="4.0" prefHeight="22.0" prefWidth="123.0" text="Monthly Profit">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <PieChart fx:id="piecharts1" layoutX="19.0" layoutY="33.0" prefHeight="138.0" prefWidth="200.0" />
+                  <PieChart fx:id="piecharts12" layoutX="17.0" layoutY="199.0" prefHeight="138.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="250.0" opacity="0.84" prefHeight="365.0" prefWidth="495.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="17.0" layoutY="14.0" prefHeight="20.0" prefWidth="125.0" text="Income Report">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <LineChart fx:id="LineChart" layoutX="9.0" layoutY="49.0" prefHeight="281.0" prefWidth="409.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </AnchorPane>
+            <JFXButton focusTraversable="false" layoutX="652.0" layoutY="618.0" prefHeight="14.0" prefWidth="118.0" text="Download Report" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="765.0" layoutY="623.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/Icons/downloads.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="8.0" prefHeight="22.0" prefWidth="166.0" text="/ Manage Profit">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
