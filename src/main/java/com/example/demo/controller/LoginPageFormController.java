@@ -29,7 +29,7 @@ public class LoginPageFormController implements Initializable {
     @FXML
     private JFXButton fingerPrintbtn;
 
-    String name="admin";
+    String name="sameera";
     String pass="1234";
 
     public void loginOnAction(MouseEvent actionEvent) throws IOException {
